@@ -15,7 +15,14 @@ Este ambiente já vem pré-configurado com as características necessárias para
 
 ## Instalação
 
-Digite: `./instalar.sh`
+Digite:
+```
+mkdir -p ~/Projetos/giusoft
+cd Projetos/giusoft
+git clone https://github.com/giusoft/gs-docker-php56
+cd gs-docker-php56
+./instalar.sh
+```
 
 ## Portas de acesso
 
