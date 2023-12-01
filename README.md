@@ -20,6 +20,7 @@ Do docker no macOS:
 
 `brew install --cask docker`
 
+Em seguida execute o app `Docker`
 
 Digite:
 ```
