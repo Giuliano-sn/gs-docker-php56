@@ -4,7 +4,7 @@ services:
       context: ./bd
       dockerfile: Dockerfile
     platform: linux/x86_64
-    image: gs-docker-mysql:latest
+    image: mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -18,11 +18,11 @@ services:
     networks:
       vpcbr:
         ipv4_address: 10.0.0.12
-  app:
+  php56:
     build:
-      context: ./app
+      context: ./php56
       dockerfile: Dockerfile
-    image: gs-docker-php56:latest
+    image: php56:latest
     ports:
       - 8080:80
     volumes:
@@ -32,6 +32,22 @@ services:
     networks:
       vpcbr:
         ipv4_address: 10.0.0.17       
+    depends_on:
+      - db
+  php82:
+    build:
+      context: ./php82
+      dockerfile: Dockerfile
+    image: php82:latest
+    ports:
+      - 8082:80
+    volumes:
+      - type: bind
+        source: /var/www/html
+        target: /var/www/html    
+    networks:
+      vpcbr:
+        ipv4_address: 10.0.0.18       
     depends_on:
       - db
 volumes:
