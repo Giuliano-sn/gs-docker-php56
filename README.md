@@ -1,5 +1,5 @@
 # Ambiente de programação Web da GiuSoft
-Para desenvolvimento Web com PHP 5.6.40 (com Apache) e MySQL 8.0.34
+Para desenvolvimento Web com PHP 5.6.40 e 8.2 (com Apache) e MySQL 8.0.34
 
 Este ambiente já vem pré-configurado com as características necessárias para o desenvolvimento web na GiuSoft:
 
@@ -33,11 +33,14 @@ cd gs-docker-php56
 
 ## Portas de acesso
 
-Web: localhost:8080
-MySQL: localhost:8036 (usuário root, sem senha)
+- Web - PHP 5.6: localhost:8080
+- Web - PHP 8.2: localhost:8081
+- MySQL: localhost:8036 (usuário root, sem senha)
 
 ## Para utilizar
 
 Para iniciar o docker compose, digite no raiz deste projeto:
 
 `docker compose up -d`
+
+Ou utilize a versão do docker para desktop.
