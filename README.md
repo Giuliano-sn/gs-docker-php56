@@ -7,7 +7,6 @@ Este ambiente já vem pré-configurado com as características necessárias para
 - PHP com a versão de produção atual, e parâmetros modificados (short_open_tag, max_execution_time, memory_limit e error_reporting
 - Apache com configuração semelhante)
 - MySQL com a configuração adequada para interpretar corretamente os códigos de página (Collation e UTF), com o usuário `web` criado, e já com as principais bases de dados instaladas (gadmin, webcfc_admin, webcfc_ba_giusoft e wms_giusoft)
-- 
 
 ## Requisitos
 
